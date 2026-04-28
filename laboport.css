@@ -1,0 +1,55 @@
+/* Styles spécifiques pour les pages de détails */
+
+.header-projet {
+    padding: 150px 0 50px 0;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.details-section {
+    padding: 50px 0;
+}
+
+.text-block {
+    margin-bottom: 40px;
+}
+
+.rouge {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.placeholder-img {
+    width: 100%;
+    min-height: 300px;
+    background: #eee;
+    border: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    margin: 20px 0;
+}
+
+.skills-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tag-item {
+    background: #2c3e50;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}

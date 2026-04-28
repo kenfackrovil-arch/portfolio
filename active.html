@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails Projet | Active Directory Domain Services</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="active.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Admin<span>ADDS</span></div>
+        <ul>
+            <li><a href="index.html">Retour au Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-act">
+        <div class="container">
+            <h1 class="titre-souligne">Infrastructure Active Directory (AD DS)</h1>
+            <p class="subtitle">Gestion centralisée des utilisateurs et des ressources réseau</p>
+        </div>
+    </header>
+
+    <main class="container-detail">
+        <section class="intro-box">
+            <h3><span class="rouge">/</span> Présentation du service</h3>
+            <p>Mise en place d'un contrôleur de domaine sous <strong>Windows Server 2019</strong>. Ce projet permet de centraliser l'authentification des utilisateurs, de gérer les permissions sur les fichiers et de sécuriser les accès distants au sein de l'organisation.</p>
+        </section>
+
+        <section class="gallery-act">
+            
+            <div class="step-card">
+                <div class="step-text">
+                    <h4>1. Rôles AD DS et DNS</h4>
+                    <p>Installation des services d'annuaire et du serveur DNS. Le DNS est crucial ici pour permettre la résolution de noms au sein du domaine local.</p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="/portfolio/image/service.png" alt="Installation AD DS et DNS">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-text">
+                    <h4>2. Gestion des Objets (OU, Groupes, Users)</h4>
+                    <p>Création d'une structure d'Unités d'Organisation. J'ai configuré des groupes de sécurité pour automatiser l'attribution des droits d'accès aux partages de fichiers.</p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="/portfolio/image/sio1.png" alt="Console Utilisateurs et ordinateurs AD">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-text">
+                    <h4>3. Intégration d'une Station Windows</h4>
+                    <p>Jonction réussie d'un client Windows 10 au domaine. Test de connexion avec un compte utilisateur créé sur le serveur et vérification du ping.</p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="/portfolio/image/conn.png" alt="Jonction domaine client">
+                </div>
+            </div>
+
+            <div class="step-card">
+                <div class="step-text">
+                    <h4>4. Administration à distance (RDP)</h4>
+                    <p>Configuration du Bureau à distance pour permettre l'administration sécurisée du serveur depuis une station de travail.</p>
+                </div>
+                <div class="img-wrapper">
+                    <img src="/portfolio/image/bureau a distance.png" alt="Configuration RDP">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="summary-box">
+            <h3><span class="rouge">/</span> Compétences validées</h3>
+            <div class="tags">
+                <span>Promotion d'un Contrôleur de Domaine</span>
+                <span>Gestion des permissions NTFS/SMB</span>
+                <span>Protocole Kerberos & LDAP</span>
+                <span>Configuration IP statique & DNS</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Administration Systèmes Windows</p>
+    </footer>
+
+</body>
+</html>

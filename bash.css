@@ -1,0 +1,59 @@
+.header-bash {
+    padding: 120px 0 40px 0;
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+.container-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style de la fenêtre de code (pour remplacer la photo) */
+.code-window {
+    background: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.code-header {
+    background: #3d3d3d;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.dot { height: 12px; width: 12px; border-radius: 50%; margin-right: 8px; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.file-name { color: #aaa; font-size: 0.9rem; margin-left: 10px; font-family: monospace; }
+
+pre {
+    padding: 20px;
+    margin: 0;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+}
+
+code { color: #ae81ff; } /* Couleur pour les variables/chiffres */
+
+.grid-bash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bash-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid #3498db;
+}

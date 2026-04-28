@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Étudiant BTS SIO SISR</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Mon Portfolio SISR</div>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#veille">Veille</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="accueil">
+        <div class="hero">
+            <h1>Bonjour, je suis Étudiant en BTS SIO</h1>
+            <p>Spécialisation <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux)</p>
+            <p>Actuellement à la recherche d'une alternance / d'un stage en support technique ou administration système.</p>
+            <a href="#projets" class="btn">Voir mes travaux</a>
+        </div>
+    </header>
+
+    <section id="competences">
+        <h2 class="titre-souligne">Mes Compétences Techniques</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Systèmes</h3>
+                <p>Windows Server, Linux (Debian/Ubuntu), Administration Active Directory.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Réseaux</h3>
+                <p>Configuration Switch/Routeur, VLANs, Protocoles de routage.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Sécurité & Virtualisation</h3>
+                <p>Firewalling (pfSense), VMware, VirtualBox, VPN.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2 class="titre-souligne">Mes Projets Réalisés</h2>
+        <div class="projects-container">
+            
+            <a href="laboport.html" class="project-link">
+                <article class="project-card">
+                    <h3>Labo de Virtualisation Réseau</h3>
+                    <p>Mise en place d'une infrastructure complète sous VMware avec segmentation réseau via pfSense et serveurs Windows/Linux.</p>
+                    <span>#VMware #pfSense #Networking</span>
+                </article>
+            </a>
+
+            <a href="haut.html" class="project-link">
+                <article class="project-card">
+                    <h3>Haute Disponibilité (CARP)</h3>
+                    <p>Mise en œuvre d'un cluster de pare-feux pfSense redondants. Configuration du basculement d'IP virtuelle (VIP).</p>
+                    <div class="ha-indicator">
+                        <span class="node active">Master (UP)</span>
+                        <span class="bridge">↔</span>
+                        <span class="node">Backup (IDLE)</span>
+                    </div>
+                    <span>#HighAvailability #CARP #pfSense #Failover</span>
+                </article>
+            </a>
+
+            <a href="bash.html" class="project-link">
+                <article class="project-card">
+                    <h3>Automatisation de Surveillance</h3>
+                    <p>Développement d'un script Bash pour surveiller les modifications critiques dans des dossiers système.</p>
+                    <span>#Bash #Linux #Automation</span>
+                </article>
+            </a>
+
+            <a href="active.html" class="project-link">
+                <article class="project-card">
+                    <h3>Infrastructure Active Directory</h3>
+                    <p>Installation et configuration d'un contrôleur de domaine, gestion des GPO et des permissions NTFS.</p>
+                    <span>#WindowsServer #AD #Sécurité</span>
+                </article>
+            </a>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contactez-moi</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rovil-kenfack-1633113b3/">LinkedIn</a> | <a href="https://github.com/kenfackrovil-arch">GitHub</a> | <a href="mailto:kenfackrovil@gmail.com">Email</a>
+        </div>
+        <p>&copy; 2026 - Portfolio BTS SIO SISR</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails Projet | Haute Disponibilité pfSense</title>
+    <link rel="stylesheet" href="index.css"> <link rel="stylesheet" href="haut.css"> </head>
+<body>
+
+    <nav>
+        <div class="logo">Architecture<span>HA</span></div>
+        <ul>
+            <li><a href="index.html">Retour au Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-ha">
+        <div class="container">
+            <h1 class="titre-souligne">Cluster pfSense & Protocole CARP</h1>
+            <p class="subtitle">Garantir une disponibilité de 99.9% du réseau</p>
+        </div>
+    </header>
+
+    <main class="container-detail">
+        <section class="intro-ha">
+            <h3><span class="rouge">/</span> Qu'est-ce que la Haute Disponibilité ?</h3>
+            <p>La HA consiste à doubler les équipements critiques (ici le pare-feu). Si le <strong>Master</strong> tombe en panne, le <strong>Backup</strong> prend sa place en moins d'une seconde de manière transparente pour les utilisateurs. C'est le principe du "Failover".</p>
+        </section>
+
+        <section class="gallery-ha">
+            
+            <div class="image-card">
+                <div class="card-info">
+                    <h4>1. État du Master (Actif)</h4>
+                    <p>On voit ici l'interface pfSense du nœud principal en état "MASTER". Toutes les sessions passent par lui.</p>
+                </div>
+                <img src="/portfolio/image/master.png" alt="Statut CARP Master" class="screenshot">
+            </div>
+
+            <div class="image-card">
+                <div class="card-info">
+                    <h4>2. État du Backup (Standby)</h4>
+                    <p>Le second nœud est en mode "BACKUP". Il surveille le Master via le protocole CARP.</p>
+                </div>
+                <img src="/portfolio/image/backup.png" alt="Statut CARP Backup" class="screenshot">
+            </div>
+
+            <div class="image-card">
+                <div class="card-info">
+                    <h4>3. Test de continuité (Ping)</h4>
+                    <p>Capture montrant une perte d'un seul paquet (ou aucun) lors de la coupure volontaire du Master. Le réseau reste opérationnel.</p>
+                </div>
+                <img src="/portfolio/image/ping.png" alt="Test de basculement ping" class="screenshot">
+            </div>
+              <div class="image-card">
+                <div class="card-info">
+                    <h4>3. Test de l'ip virtuel</h4>
+                    <p>Capture montrant une ip virtelle qui est un chemin vers la sortir .</p>
+                </div>
+                <img src="/portfolio/image/ipvirtuel.png" alt="verification de ipvirtuel" class="screenshot">
+            </div>
+              <div class="image-card">
+                <div class="card-info">
+                    <h4>autorisation des ping</h4>
+                    <p>Capture montrant les autorisation des ping et des partage de fichier fait sur opt2.</p>
+                </div>
+                <img src="/portfolio/image/opt2.png" alt="Automatisation des ping sur opt2" class="screenshot">
+            </div>
+
+        </section>
+
+        <section class="tech-list">
+            <h3><span class="rouge">/</span> Concepts mis en œuvre</h3>
+            <ul>
+                <li><strong>CARP (Common Address Redundancy Protocol) :</strong> Partage d'une adresse IP virtuelle (VIP) entre les deux pare-feux.</li>
+                <li><strong>XMLRPC Sync :</strong> Pour que chaque modification sur le Master soit copiée sur le Backup.</li>
+                <li><strong>pfsync :</strong> Synchronisation de la table d'état (State Table) pour ne pas couper les connexions en cours (ex: téléchargements).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Spécialisation Réseaux & Sécurité</p>
+    </footer>
+
+</body>
+</html>

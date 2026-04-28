@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails Projet | Automation Bash</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bash.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Admin<span>BASH</span></div>
+        <ul>
+            <li><a href="index.html">Retour au Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-bash">
+        <div class="container">
+            <h1 class="titre-souligne">Automatisation & Surveillance Linux</h1>
+            <p class="subtitle">Développement d'un script de monitoring en Bash</p>
+        </div>
+    </header>
+
+    <main class="container-detail">
+        <section class="intro-box">
+            <h3><span class="rouge">/</span> Objectif du Script</h3>
+            <p>Le but était de créer un outil capable de surveiller en temps réel les modifications dans un dossier sensible (ex: <code>/etc</code> ou un dossier de partage). Le script utilise une boucle <code>while</code> et des structures conditionnelles pour alerter l'administrateur en cas de changement.</p>
+        </section>
+
+        <!-- <section class="code-section">
+            <h3><span class="rouge">/</span> Le Code Source</h3>
+            <div class="code-window">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="file-name">monitor.sh</span>
+                </div>
+                <pre><code>
+#!/bin/bash
+# Script de surveillance de dossier
+
+DOSSIER="/home/user/test"
+echo "Surveillance activée sur : $DOSSIER"
+
+while true
+do
+    # Logique de comparaison des fichiers
+    # [Ton code de détection ici]
+    sleep 5
+done
+                </code></pre>
+            </div>
+        </section> -->
+
+        <section class="logic-box">
+            <h3><span class="rouge">/</span> Notions techniques utilisées</h3>
+            <div class="grid-bash">
+                <div class="bash-card">
+                    <h4>Boucles & Conditions</h4>
+                    <p>Utilisation de <code>while true</code> pour une exécution permanente et de <code>if [ $var1 != $var2 ]</code> pour comparer les états.</p>
+                </div>
+                <div class="bash-card">
+                    <h4>Variables système</h4>
+                    <p>Gestion des chemins absolus et stockage des métadonnées des fichiers pour comparaison.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Automation & Scripting Linux</p>
+    </footer>
+
+</body>
+</html>

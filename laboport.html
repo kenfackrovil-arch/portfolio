@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails Projet | Labo Virtualisation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="laboport.css"> </head>
+<body>
+
+    <nav>
+        <div class="logo">Détails<span>PROJET</span></div>
+        <ul>
+            <li><a href="index.html">Retour au Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-projet">
+        <div class="container">
+            <h1 class="titre-souligne">Labo de Virtualisation Réseau</h1>
+            <p class="subtitle">Conception d'une infrastructure d'entreprise virtualisée</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="details-section">
+            <div class="text-block">
+                <h3><span class="rouge">/</span> Présentation du projet</h3>
+                <p>L'objectif de ce projet était de simuler un environnement réseau complet et sécurisé au sein d'un seul hyperviseur. Ce labo sert de base pour tester des configurations serveurs et des règles de sécurité avant mise en production.</p>
+            </div>
+
+            <div class="text-block">
+                <h3><span class="rouge">/</span> Architecture Technique</h3>
+                <ul>
+                    <li><strong>Topologie : Le routeur Mikrotik agit comme passerelle entre les segments</strong> Il est relié au PC via un commutateur virtuel (vSwitch) sur un segment réseau spécifique.</li>
+                    <li><strong>Configuration IP : Le PC utilise l'IP du Mikrotik comme Passerelle par défaut</strong> (Default Gateway).</li>
+                    <li><strong>Segmentation :</strong> verificationDE la connectivite entre les Mikrotik et VLAN.</li>
+                    <li><strong>Systèmes :</strong> Mikrotik VLAN.</li>
+                </ul>
+            </div>
+
+            <div class="image-block">
+    <h3><span class="rouge">/</span> Preuves Techniques & Schémas</h3>
+    
+    <div class="img-container">
+        <p class="img-caption">Topologie logique du Labo (VLANs & Routage)</p>
+        <img src="/portfolio/image/pcm.jpeg" alt="Schéma Réseau" class="img-screenshot">
+    </div>
+
+    <div class="img-container">
+        <p class="img-caption">Configuration des interfaces et du Firewall sur pfSense</p>
+        <img src="/portfolio/image/pingm.jpeg" alt="Dashboard pfSense" class="img-screenshot">
+    </div>
+
+    <div class="img-container">
+        <p class="img-caption">Gestion des utilisateurs dans l'Active Directory</p>
+        <img src="/portfolio/image/mikro.jpeg" alt="Interface Active Directory" class="img-screenshot">
+    </div>
+</div>
+
+            <div class="text-block">
+                <h3><span class="rouge">/</span> Compétences Validées</h3>
+                <div class="skills-tags">
+                    <span class="tag-item">Routage statique</span>
+                    <span class="tag-item">Segmentation VLAN</span>
+                    <span class="tag-item">Gestion d'hyperviseur</span>
+                    <span class="tag-item">NAT/PAT</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Documentation Technique SISR</p>
+    </footer>
+
+</body>
+</html>

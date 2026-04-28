@@ -1,0 +1,144 @@
+/* Design Global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 5%;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+
+/* Hero */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000') no-repeat center center/cover;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+
+.btn { display: inline-block; background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 20px; }
+
+section { padding: 100px 10%; }
+
+/* Titres */
+.titre-souligne {
+    color: #e74c3c;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+.titre-souligne:hover { transform: scale(1.1); }
+
+/* Grilles */
+.skills-grid, .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: stretch; /* Force les éléments à s'étirer sur la même ligne */
+}
+/* Style des icônes dans les compétences */
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Liste de compétences */
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.skill-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajout d'un petit check bleu devant chaque compétence */
+.skill-list li::before {
+    content: "✓";
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Effet au survol du bloc complet */
+.skill-card:hover .skill-icon {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* --- CORRECTION DE LA TAILLE DES LIENS --- */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex; /* Permet au lien de remplir la cellule de la grille */
+    height: 100%;
+}
+
+.skill-card, .project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    
+    /* Force la hauteur uniforme */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligne les tags en bas de carte */
+}
+
+/* Hover */
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-10px);
+    border: 2px solid #3498db;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.project-card span { font-size: 0.8rem; color: #3498db; font-weight: bold; margin-top: 15px; }
+
+/* HA Style */
+.ha-indicator {
+    display: flex; justify-content: center; align-items: center;
+    background: #e0e0e0; padding: 10px; margin: 15px 0; border-radius: 4px; font-size: 0.75rem; font-weight: bold;
+}
+.node.active { color: #27ae60; }
+.bridge { margin: 0 10px; color: #3498db; }
+
+footer { background: #2c3e50; color: white; text-align: center; padding: 40px 0; }
+/* Bouton LinkedIn */
+.social-links a[href*="linkedin"] {
+    background-color: #0077b5;
+    color: white;
+}
+
+/* Bouton GitHub */
+.social-links a[href*="github"] {
+    background-color: greenyellow;
+    color: white;
+}

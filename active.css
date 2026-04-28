@@ -1,0 +1,90 @@
+.header-act {
+    padding: 120px 0 40px 0;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.container-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intro-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+}
+
+.step-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Inversion une fois sur deux pour le design */
+.step-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-text h4 {
+    color: #e74c3c;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+.img-wrapper {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.05);
+}
+
+.summary-box {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tags span {
+    background: #2c3e50;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+
+/* Responsiveness pour mobile */
+@media (max-width: 768px) {
+    .step-card, .step-card:nth-child(even) {
+        flex-direction: column;
+    }
+}
